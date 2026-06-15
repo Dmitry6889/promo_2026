@@ -45,10 +45,16 @@
 
     </div>
 
-    <div id="mobileMenu" class="mobile-menu hidden flex-col gap-2 p-4 md:hidden">
-      <button type="button" class="px-4 py-2 rounded-lg bg-[#FFA31A] text-black">Обо мне</button>
-      <button type="button" class="px-4 py-2 rounded-lg bg-[#FFA31A] text-black">Предложения</button>
-      <button type="button" class="px-4 py-2 rounded-lg bg-[#FFA31A] text-black">Контакты</button>
+    <div id="mobileMenu" class="hidden fixed inset-0 z-[60] flex items-center justify-center md:hidden">
+      <!-- затемнение фона -->
+      <div id="menuBackdrop" class="absolute inset-0 bg-black/60"></div>
+    
+      <!-- окно по центру -->
+      <div class="relative z-10 w-[90%] max-w-sm flex flex-col gap-3 p-6 rounded-xl bg-gray-800">
+        <button type="button" class="px-4 py-2 rounded-lg bg-[#FFA31A] text-black">Обо мне</button>
+        <button type="button" class="px-4 py-2 rounded-lg bg-[#FFA31A] text-black">Предложения</button>
+        <button type="button" class="px-4 py-2 rounded-lg bg-[#FFA31A] text-black">Контакты</button>
+      </div>
     </div>
   </header>
 
@@ -57,10 +63,10 @@
     <div class="hero container max-w-6xl mx-auto grid md:grid-cols-2 gap-4 p-6 bg-black-200">
 
       <div class="hero__content  p-6 flex flex-col gap-4 min-h-64 md:min-h-80 text-xl">
-        <div class="hero__tag  flex-1 w-full p-4 flex items-center">Использовние современных и оптимальных технологий</div>
-        <div class="hero__title  flex-1 w-full p-4 flex items-center">Подбор дизайна под ваши цели</div>
-        <div class="hero__text  flex-1 w-full p-4 flex items-center">Стоимость строится на оценке реальных данных</div>
-        <div class="hero__cta  flex-1 w-full p-4 flex items-center">Без навязываний не нужных вам услуг</div>
+        <div class="hero__tag  flex-1 w-full p-4 flex items-center">Здравствуйте, меня зовут Дмитрий и я разработчик</div>
+        <div class="hero__title  flex-1 w-full p-4 flex items-center">Ознакомтесь с тем, чем я могу Вам быть полезен</div>
+        <div class="hero__text  flex-1 w-full p-4 flex items-center">Постараюсь удивить Вас индивидуальным подоходом,</div>
+        <div class="hero__cta  flex-1 w-full p-4 flex items-center">скоростью выполнения, соверменными технологиями и стоимостью</div>
       </div>
 
       <div class="hero__media h-64 md:h-auto rounded-full m-auto ">

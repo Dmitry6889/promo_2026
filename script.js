@@ -15,3 +15,8 @@ contactsToggle.addEventListener("click", (event) => {
 document.addEventListener("click", () => {
   contactsDropdown.classList.add("hidden");
 });
+
+const menuBackdrop = document.getElementById("menuBackdrop");
+menuBackdrop.addEventListener("click", () => {
+  menu.classList.add("hidden");
+});
